@@ -12,5 +12,5 @@ dist
 dist-ssr
 *.local
 .output
-.nuxt
+.nitro
 doc

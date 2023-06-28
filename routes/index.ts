@@ -1,1 +1,3 @@
-export default defineEventHandler(() => '<h1>nitro is amazing!</h1>')
+import { eventHandler } from '#imports'
+
+export default eventHandler(() => '<h1>nitro is amazing!</h1>')

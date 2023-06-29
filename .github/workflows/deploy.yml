@@ -32,5 +32,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "late-mouse-81"
-          entrypoint: "index.js" # 📝 Update the entrypoint
+          entrypoint: ".output/server/index.mjs" # 📝 Update the entrypoint
           root: "."

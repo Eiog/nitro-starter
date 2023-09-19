@@ -24,18 +24,18 @@
   "devDependencies": {
     "@eiog/eslint-config-ts": "^0.0.2",
     "@eiog/ts-config": "^0.0.3",
-    "@types/node": "^20.3.2",
-    "@vitest/ui": "^0.32.2",
-    "commitlint": "^17.6.6",
-    "cz-git": "^1.6.1",
-    "czg": "^1.6.1",
-    "eslint": "^8.43.0",
-    "lint-staged": "^13.2.3",
-    "nitropack": "^2.5.1",
-    "simple-git-hooks": "^2.8.1",
-    "taze": "^0.10.2",
-    "typescript": "^5.1.5",
-    "vitest": "^0.32.2"
+    "@types/node": "^20.6.2",
+    "@vitest/ui": "^0.34.4",
+    "commitlint": "^17.7.1",
+    "cz-git": "^1.7.1",
+    "czg": "^1.7.1",
+    "eslint": "^8.49.0",
+    "lint-staged": "^14.0.1",
+    "nitropack": "^2.6.3",
+    "simple-git-hooks": "^2.9.0",
+    "taze": "^0.11.2",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.4"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged && pnpm type:check"

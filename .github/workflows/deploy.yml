@@ -19,7 +19,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
-          version:  8
+          version: 8
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
@@ -31,6 +31,6 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "late-mouse-81"
-          entrypoint: ".output/server/index.mjs" # 📝 Update the entrypoint
-          root: "."
+          project: late-mouse-81
+          entrypoint: .output/server/index.mjs # 📝 Update the entrypoint
+          root: .

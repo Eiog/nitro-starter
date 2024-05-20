@@ -8,7 +8,7 @@
   "license": "MIT",
   "homepage": "https://github.com/Eiog/nitro-starter",
   "scripts": {
-    "dev": "nitro dev",
+    "dev": "set PORT=5678 && nitro dev --host",
     "build": "nitro build",
     "start": "node .output/server/index.mjs",
     "generate": "npx nitropack prepare",
@@ -22,20 +22,21 @@
     "postinstall": "npx simple-git-hooks && pnpm generate"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.18.1",
     "@eiog/eslint-config-ts": "^0.0.2",
     "@eiog/ts-config": "^0.0.3",
-    "@types/node": "^20.6.2",
-    "@vitest/ui": "^0.34.4",
-    "commitlint": "^17.7.1",
-    "cz-git": "^1.7.1",
-    "czg": "^1.7.1",
-    "eslint": "^8.49.0",
-    "lint-staged": "^14.0.1",
-    "nitropack": "^2.6.3",
-    "simple-git-hooks": "^2.9.0",
-    "taze": "^0.11.2",
-    "typescript": "^5.2.2",
-    "vitest": "^0.34.4"
+    "@types/node": "^20.12.12",
+    "@vitest/ui": "^1.6.0",
+    "commitlint": "^19.3.0",
+    "cz-git": "^1.9.1",
+    "czg": "^1.9.1",
+    "eslint": "^9.3.0",
+    "lint-staged": "^15.2.2",
+    "nitropack": "^2.9.6",
+    "simple-git-hooks": "^2.11.1",
+    "taze": "^0.13.8",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged && pnpm type:check"
